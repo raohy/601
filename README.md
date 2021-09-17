@@ -1,7 +1,7 @@
 # 601A1
 ## Multi-View Stereo
   Multi-view stereo (MVS) is a general term for a series of methods of multi-view 3D reconstruction which refers to the task of reconstructing a 3D shape from calibrated overlapping images captured from different viewpoints. In short, it uses multiple photos taken by multiple cameras to reconstruct the scene in the photo.
-![sbbbb](1.png)
+![sbbbb](/images/1.png)
   In the picture above, we took different images of the Buddha statue in different orientations. Different images contain different information about Buddha statues. The main goal of the MVS is finding an algorithm to maximize the use of this information to model the Buddha statue in 3D. 
 
   MVS originated as a natural improvement to the two-view case. Until this day, two-view stereo algorithms have been a very active and fruitful research area. In two-view stereo, only two images from different angels are taken. 
