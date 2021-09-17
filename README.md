@@ -9,7 +9,7 @@
   Instead of capturing two photographs from two different viewpoints, multi-view stereo would capture more viewpoints in-between to increase robustness which significantly increase the difficulty. Two major breakthroughs in nowsdays gradually trun two-view into multi-view. First is the improvements in digital cameras and computation power which makes the photos to be more precise and enables the algorithms to easily handle tens of thousands of images. Second is the improvements of Algorithms over decades. With these two changes, MVS gradually step into the industry from the lab.
   
 MVS is used in many aspects of production and life such as VR/AR, autonomous driving and Robot manupilation. 
-  ![](/images/AR.png) ![](/images/autonomous.png)
+  ![](/images/AR.png) ![](/images/autonomous.png) ![](/images/robot.png)
 Its applications range from 3D mapping and navigation to online shopping, 3D printing, computational photography, computer video games, or cultural heritage archival.
 
 The goal of an image-based 3D reconstruction algorithm can be de- scribed as ”given a set of photographs of an object or a scene, estimate
