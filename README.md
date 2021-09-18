@@ -37,7 +37,7 @@
 <p align="center">
                                                                                     Figure4
   </p>
-  Figure 4 is the performance comparison diagram of the existing neural network-based MVS algorithm. From this picture, we can find that the best method today is CVP-MVSNet based on neural networks, with a minimum distance error of 0.351 which is much smaller than the traditional method. And it is worth noting that unsupervised method also achieve a good result which was proposed in 2021 and was a very promising direction in the future.
+  Figure 4 is the performance comparison diagram of the existing neural network-based MVS algorithm. From this picture, we can find that the best method today is CVP-MVSNet based on neural networks, with a minimum distance error of 0.351 which is much smaller than the traditional method. And it is worth noting that unsupervised method also achieve a good result which was proposed in 2021 and also has great potential in the future.
   
 ### Open Source Project
 #### PMVS
@@ -47,6 +47,11 @@
 #### OpenMVG
   OpenMVG's mission is to extend awareness of the power of 3D reconstruction from images by developing a C++ framework. The library also includes the two complete SfM pipelines and provides customizable tools to help engineers to deal with MVS problems.
 
+### Reference
+##### Sinha S.N. (2014) Multiview Stereo. In: Ikeuchi K. (eds) Computer Vision. Springer, Boston, MA.
+##### Yao Y, Luo Z, Li S, et al. Mvsnet: Depth inference for unstructured multi-view stereo[C]//Proceedings of the European Conference on Computer Vision (ECCV). 2018: 767-783.
+
+##### Yasutaka Furukawa; Carlos Hernández, Multi-View Stereo: A Tutorial , now, 2015.
 
 The goal of an image-based 3D reconstruction algorithm can be de- scribed as ”given a set of photographs of an object or a scene, estimate
 the most likely 3D shape that explains those photographs, under the assumptions of known materials, viewpoints, and lighting conditions” (See Figure 1.1).
