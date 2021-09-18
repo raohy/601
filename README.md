@@ -1,27 +1,33 @@
-# 601A1
-## Multi-View Stereo
+# 601A1 
+## Multi-View Stereo(Building 3D scenes from 2D images using ML algorithms)
 ### What is Multi-View Stereo?
-  Multi-view stereo (MVS) is a general term for a series of methods of multi-view 3D reconstruction which refers to the task of reconstructing a 3D shape from calibrated overlapping images captured from different viewpoints. In short, it uses multiple photos taken by multiple cameras to reconstruct the scene in the photo.
+  Multi-view stereo (MVS) is a general term for a series of methods of multi-view 3D reconstruction which refers to the task of reconstructing a 3D shape from calibrated overlapping images captured from different viewpoints. In short, it uses multiple photos taken by one/multiple camera(s) to reconstruct the 3D scene in the photo.
 ![](/images/1.png)
 <p align="center">
                                                                                     Figure1
   </p>
                                                                   
-  For example, in the picture above, we took different images of the Buddha statue in different orientations. Different images contain different and overlapping information about the Buddha statues. The main goal of the MVS is to use an algorithm to maximize the use of the information get from the images to model the Buddha statue in 3D. 
-### Why MVS is important?
+  For example, in the picture above, different images of the Buddha statue are taken in different orientations in advance. Different images contain different and overlapping information about the Buddha statues. The main goal of the MVS is to use an algorithm to maximize the use of overlapping information to map and different information to model the Buddha statue in 3D. 
+### Why is MVS important?
   MVS is widely used range from 3D mapping and navigation to online shopping, 3D printing, computational photography, computer video games, or cultural heritage archival.
   
   ![](/images/AR.png) ![](/images/autonomous.png) ![](/images/robots.png)
 <p align="center">
                                                                                     Figure2
   </p>
-   In the robotics, MVS can be used by a single camera to obtain the position and posture of the object to assist the grasping of the robotic arm. In the remote sensing, processing millions of photographs over hundreds of kilometers at a time, mvs can effectively reconstructing large metropolitan and rural areas. In autonomous driving, using MVS can more accurately generate models of nearby objects to assist obstacle avoidance. These all are the applications of MVS. They are widely used in our daily life, but we rarely pay attention to them.
+  
+   In robotics, MVS can obtain the position and posture of an object through a single camera to assist the grasping of the robotic arm. In autonomous driving, the use of MVS can more accurately generate models of nearby objects to assist obstacle avoidance.
+   
+   In terms of remote sensing, processing millions of photos over hundreds of kilometers at a time, mvs can effectively reconstruct metropolises and rural areas. Apple Maps “Flyover” feature provides views of high quality texture mapped city building models. Google Maps “Earth View” also provides stunning 3D views of cities.These are the applications of MVS. They are widely used in our daily lives, but we rarely pay attention to them.  
+   
+   The demand for the 3d industry has increased significantly in recent years. As an indispensable part of 3d industry, mvs has also developed rapidly. Many emerging companies are gradually established, such as Acute3D and Pix4D, allowing users to build high quality and resolution 3D models. So in general, mvs has high practical value, and its future prospects are very promising.
    
 ### Literature review
-  MVS originated as a natural improvement to the two-view case. Until this day, two-view stereo algorithms have been a very active and fruitful research area. Instead of capturing two photographs from two different viewpoints, multi-view stereo would capture more viewpoints in-between to increase robustness which significantly increase the difficulty. Two major breakthroughs nowsdays gradually trun two-view into multi-view. First is the improvements in digital cameras and computation power which makes the photos to be more precise and enables the algorithms to easily handle tens of thousands of images. Second is the improvements of Algorithms over decades. With these two changes, MVS gradually step into the industry from the lab.
-  After decades of development, the algorithm of MVS has gradually matured, and the 3D modeling accuracy has become higher and higher. According to the method, it can be divided into two categories. The first is the traditional statistical-like algorithm, and the second is the modeling method based on deep learning after 2015.
+  MVS originated from a natural improvement to the two-view case. Until today, two-view stereo algorithms have been a very active and fruitful research field. Instead of capturing two photographs from two different viewpoints, multi-view stereo would capture more viewpoints to increase robustness which significantly increase the difficulty. The current two major breakthroughs have gradually turned the two-view into a multi-view. The first is the improvement of digital cameras and computing power, which makes photos more accurate and allows algorithms to easily process tens of thousands of images. The second is the improvement of algorithms over the past few decades. With these two changes, MVS gradually entered the industry from the laboratory.
   
-#### Statistics-like method
+   After decades of development, the MVS algorithm has gradually matured, and the accuracy of 3D modeling has become higher and higher. According to the method, it can be divided into two categories. One is the hand-crafted traditional method, and the other is the modeling method based on deep learning after 2015.
+  
+#### hand-crafted method
   Before generalizing statistics-like method of mvs, it is worth mentioning the SFM(Structure for motion) algorithm. Its idea is very suitable for MVS which is very useful for reference. SFM refers to a series of algorithms that estimating three-dimensional structures from two-dimensional image sequences that may be coupled with local motion signals. Under normal circumstances, SFM mainly focused on the geometry of two and three views. 
   ![](/images/sfm.png)
 <p align="center">
