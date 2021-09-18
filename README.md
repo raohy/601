@@ -22,28 +22,34 @@
   After decades of development, the algorithm of MVS has gradually matured, and the 3D modeling accuracy has become higher and higher. According to the method, it can be divided into two categories. The first is the traditional statistical-like algorithm, and the second is the modeling method based on deep learning after 2015.
   
 #### Statistics-like method
-  Before generalizing statistics-like method of mvs, it is worth mentioning the sfm(Structure for motion) algorithm. Its idea is very suitable for mvs which is very useful for reference. SFM refers to a series of algorithms that estimating three-dimensional structures from two-dimensional image sequences that may be coupled with local motion signals. Under normal circumstances, SFM mainly focused on the geometry of two and three views. 
+  Before generalizing statistics-like method of mvs, it is worth mentioning the SFM(Structure for motion) algorithm. Its idea is very suitable for MVS which is very useful for reference. SFM refers to a series of algorithms that estimating three-dimensional structures from two-dimensional image sequences that may be coupled with local motion signals. Under normal circumstances, SFM mainly focused on the geometry of two and three views. 
+  ![](/images/sfm.png)
+<p align="center">
+                                                                                    Figure3
+  </p>
+  
+ SFM algorithms can be divided into the above steps：find features, match features, generate tracks and model tracks. SFM algorithms usually find similar feature points in the pair images, and use the feature points as key points to fuse and reconstruct 3d scene.  
  Inspired by sfm, the mvs method can also be divided into two parts. First is the Photoconsistency method. And the second is the algorithms for 3d construction.
 ##### Photoconsistency
- Multi-view photo-consistency measures the agreement or consistency between a set of input photographs and all the ingredients that take part in their image formation, such as illumination and 3d geometry. Photoconsistency lay the foundation for the next 3d reconstruction which determines the quality of the reconstruction. Nowadays there are many photoconsistency algorithms for us to choose. Among them, the most popular are the NCC and SAD. NCC is mainly used to match images with varying lighting conditions and usually good coverage. SAD on the other hand is used when the images are not expected to have bias or gain changes, and coverage is low.
+ Multi-view photo-consistency, similar to the match features precedure in SFM, measures the agreement or consistency between a set of input photographs and all the ingredients that take part in their image formation, such as illumination and 3d geometry. Photoconsistency lay the foundation for the next 3d reconstruction which determines the quality of the reconstruction. Nowadays there are many photoconsistency algorithms for us to choose. Among them, the most popular are the NCC and SAD. NCC is mainly used to match images with varying lighting conditions and usually good coverage. SAD on the other hand is used when the images are not expected to have bias or gain changes, and coverage is low.
 ##### 3d construction
-
-low-textured, specular and reflective re- gions of the scene make dense matching intractable and thus lead to incomplete reconstructions.
+According to the different format of the output 3d model, 3d construction algorithms can be divided into 4 categories:a depthmap, a point cloud, a volume scalar-field, and a mesh.
+Although traditional methods can achieve great results under normal circumstances, low-textured, specular and reflective regions of the scene make dense matching intractable and thus lead to incomplete reconstructions. MVS needs to be improved in these areas.
 #### Deep learning methed
 ##### MVSNet
   After 2010, cnn has achieved sota results in more and more image processing tasks. Many people begun to wonder whether CNN can be used in the mvs, but the results obtained are not satisfactory. Until the proposal of MVSNet, the first to apply cost volume to the neural network, obtained a very good experimental result. MVSNet can be regarded as the originator of the application of neural networks to the MVS field.
   ![](/images/MVSNet.png)
 <p align="center">
-                                                                                    Figure3
+                                                                                    Figure4
   </p>
   In the paper, the author proposed an end-to-end deep learning architecture for depth map inference(see Figure3). The network takes one reference image and several source images as input, then use the convolutional network to obtain the feature maps separately. The key insight is the differentiable homography warping operation, which implicitly encodes camera geometries in the network to build the 3D cost volumes from 2D image features maps. And then a variance-based metric was proposed that maps multiple features into one cost feature in the volume. Cost volume then undergoes multi-scale 3D convolutions and regress an initial depth map. Finally, the depth map is refined with the reference image to improve the accuracy of boundary areas.
   After the network was proposed, many researchers generally accepted this idea and many improved versions were proposed on MVSNET, such as R-MVSNet, Fast-MVSNet and Cas-MVSNet. 
   
 ![](/images/overall.png)
 <p align="center">
-                                                                                    Figure4
+                                                                                    Figure5
   </p>
-  Figure 4 is the performance comparison diagram of the existing neural network-based MVS algorithm. From this picture, we can find that the best method today is CVP-MVSNet based on neural networks, with a minimum distance error of 0.351 which is much smaller than the traditional method. And it is worth noting that unsupervised method also achieve a good result which was proposed in 2021 and also has great potential in the future.
+  Figure5 is the performance comparison diagram of the existing neural network-based MVS algorithm. From this picture, we can find that the best method today is CVP-MVSNet based on neural networks, with a minimum distance error of 0.351 which is much smaller than the traditional method. And it is worth noting that unsupervised method also achieve a good result which was proposed in 2021 and also has great potential in the future.
   
 ### Open Source Project
 #### PMVS
