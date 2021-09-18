@@ -9,13 +9,14 @@
   
   ![](/images/AR.png) ![](/images/autonomous.png) ![](/images/robots.png)
     
-   In the robotics, MVS can be used by a single camera to obtain the position and posture of the object to assist the grasping of the robotic arm. In the remote sensing, process millions of photographs over hundreds of kilometers at a time, effectively reconstructing large metropolitan and rural areas. In autonomous driving, Using MVS can more accurately generate models of nearby objects to assist obstacle avoidance. These all are the applications of MVS. They are widely used in our daily life, but we rarely pay attention to them.
+   In the robotics, MVS can be used by a single camera to obtain the position and posture of the object to assist the grasping of the robotic arm. In the remote sensing, processing millions of photographs over hundreds of kilometers at a time, mvs can effectively reconstructing large metropolitan and rural areas. In autonomous driving, using MVS can more accurately generate models of nearby objects to assist obstacle avoidance. These all are the applications of MVS. They are widely used in our daily life, but we rarely pay attention to them.
 ### Literature review
   MVS originated as a natural improvement to the two-view case. Until this day, two-view stereo algorithms have been a very active and fruitful research area. Instead of capturing two photographs from two different viewpoints, multi-view stereo would capture more viewpoints in-between to increase robustness which significantly increase the difficulty. Two major breakthroughs in nowsdays gradually trun two-view into multi-view. First is the improvements in digital cameras and computation power which makes the photos to be more precise and enables the algorithms to easily handle tens of thousands of images. Second is the improvements of Algorithms over decades. With these two changes, MVS gradually step into the industry from the lab.
   After decades of development, the algorithm of MVS has gradually matured, and the 3D modeling accuracy has become higher and higher. According to the method, it can be divided into two categories. The first is the traditional statistical-like algorithm, and the second is the modeling method based on deep learning after 2015.
   
 #### Deep learning methed
-  
+##### MVSNet
+  After 2010, cnn has achieved sota results in more and more image processing tasks. Many people begun to wonder whether CNN can be used in the mvs, but the results obtained are not satisfactory. Until the proposal of MVSNet, the first to apply cost volume to the neural network, obtained a very good experimental result. MVSNet can be regarded as the originator of the application of neural networks to the MVS field.
 ### Open Source Project
 #### PMVS
   PMVS is probably the first successful open-source MVS software, which has been extensively used by nonexperts such as artists and civil engineers. PMVS is a multi-view stereo software that takes a set of images and camera parameters, then reconstructs 3D structure of an object or a scene visible in the images. This project started in 2007. With the emergence of new algorithms, this software is constantly updated, such as PMVS2, CMVS, etc., and it is now a fairly mature open source product.
