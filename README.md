@@ -28,13 +28,14 @@
    After decades of development, the MVS algorithm has gradually matured, and the accuracy of 3D modeling has become higher and higher. According to the method, it can be divided into two categories. One is the hand-crafted traditional method, and the other is the modeling method based on deep learning after 2015.
   
 #### hand-crafted method
-  Before generalizing statistics-like method of mvs, it is worth mentioning the SFM(Structure for motion) algorithm. Its idea is very suitable for MVS which is very useful for reference. SFM refers to a series of algorithms that estimating three-dimensional structures from two-dimensional image sequences that may be coupled with local motion signals. Under normal circumstances, SFM mainly focused on the geometry of two and three views. 
+  Before generalizing statistics-like method of mvs, it is worth mentioning the SFM(Structure for motion) algorithm. Its idea is very suitable for MVS and it is very valuable for reference. SFM refers to a series of algorithms for estimating three-dimensional structure from a sequence of moving two-dimensional images. Normally, SFM mainly focused on the geometry of two and three views. 
+  
   ![](/images/sfm.png)
 <p align="center">
                                                                                     Figure3
   </p>
   
- SFM algorithms can be divided into the above steps：find features, match features, generate tracks and model tracks. SFM algorithms usually find similar feature points in the pair images, and use the feature points as key points to fuse and reconstruct 3d scene.  
+ The SFM algorithm can be divided into the following steps: finding features, matching features, generating trajectories, and modeling trajectories. The SFM algorithm usually finds similar feature points in a pair of images, and uses the feature points as key points to fuse and reconstruct the 3D scene.
  Inspired by sfm, the mvs method can also be divided into two parts. First is the Photoconsistency method. And the second is the algorithms for 3d construction.
 ##### Photoconsistency
  Multi-view photo-consistency, similar to the match features precedure in SFM, measures the agreement or consistency between a set of input photographs and all the ingredients that take part in their image formation, such as illumination and 3d geometry. Photoconsistency lay the foundation for the next 3d reconstruction which determines the quality of the reconstruction. Nowadays there are many photoconsistency algorithms for us to choose. Among them, the most popular are the NCC and SAD. NCC is mainly used to match images with varying lighting conditions and usually good coverage. SAD on the other hand is used when the images are not expected to have bias or gain changes, and coverage is low.
