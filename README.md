@@ -22,7 +22,8 @@
   After decades of development, the algorithm of MVS has gradually matured, and the 3D modeling accuracy has become higher and higher. According to the method, it can be divided into two categories. The first is the traditional statistical-like algorithm, and the second is the modeling method based on deep learning after 2015.
   
 #### Statistics-like method
- a traditional algorithms can divided into two parts. First is the Photoconsistency method. And the second is the algorithms for 3d construction.
+  Before generalizing statistics-like method of mvs, it is worth mentioning the sfm(Structure for motion) algorithm. Its idea is very similar to mvs which is very useful for reference.
+ Inspired by sfm, the mvs method can also be divided into two parts. First is the Photoconsistency method. And the second is the algorithms for 3d construction.
 ##### Photoconsistency
  Multi-view photo-consistency measures the agreement or consistency between a set of input photographs and all the ingredients that take part in their image formation, such as illumination and 3d geometry. Photoconsistency lay the foundation for the next 3d reconstruction which determines the quality of the reconstruction. Nowadays there are many photoconsistency algorithms for us to choose. Among them, the most popular are the NCC and SAD. NCC is mainly used to match images with varying lighting conditions and usually good coverage. SAD on the other hand is used when the images are not expected to have bias or gain changes, and coverage is low.
 ##### 3d construction
