@@ -31,6 +31,10 @@
   In the paper, the author proposed an end-to-end deep learning architecture for depth map inference(see Figure3). The network takes one reference image and several source images as input, then use the convolutional network to obtain the feature maps separately. The key insight is the differentiable homography warping operation, which implicitly encodes camera geometries in the network to build the 3D cost volumes from 2D image features maps. And then a variance-based metric was proposed that maps multiple features into one cost feature in the volume. Cost volume then undergoes multi-scale 3D convolutions and regress an initial depth map. Finally, the depth map is refined with the reference image to improve the ac- curacy of boundary areas.
   After the network was proposed, many researchers generally accepted this idea and many improved versions were proposed on MVSNET, such as R-MVSNet, Fast-MVSNet and CasMVSNet. 
   
+    ![](/images/overall.png)
+<p align="center">
+                                                                                    Figure4
+  </p>
 ### Open Source Project
 #### PMVS
   PMVS is probably the first successful open-source MVS software, which has been extensively used by nonexperts such as artists and civil engineers. PMVS is a multi-view stereo software that takes a set of images and camera parameters, then reconstructs 3D structure of an object or a scene visible in the images. This project started in 2007. With the emergence of new algorithms, this software is constantly updated, such as PMVS2, CMVS, etc., and it is now a fairly mature open source product.
