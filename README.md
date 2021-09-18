@@ -22,7 +22,12 @@
   After decades of development, the algorithm of MVS has gradually matured, and the 3D modeling accuracy has become higher and higher. According to the method, it can be divided into two categories. The first is the traditional statistical-like algorithm, and the second is the modeling method based on deep learning after 2015.
   
 #### Statistics-like method
+ a traditional algorithms can divided into two parts. First is the Photoconsistency method. And the second is the algorithms for 3d construction.
+##### Photoconsistency
+ Multi-view photo-consistency measures the agreement or consistency between a set of input photographs and all the ingredients that take part in their image formation, such as illumination and 3d geometry. Photoconsistency lay the foundation for the next 3d reconstruction which determines the quality of the reconstruction. Nowadays there are many photoconsistency algorithms for us to choose. Among them, the most popular are the NCC and SAD. NCC is mainly used to match images with varying lighting conditions and usually good coverage. SAD on the other hand is used when the images are not expected to have bias or gain changes, and coverage is low.
+##### 3d construction
 
+low-textured, specular and reflective re- gions of the scene make dense matching intractable and thus lead to incomplete reconstructions.
 #### Deep learning methed
 ##### MVSNet
   After 2010, cnn has achieved sota results in more and more image processing tasks. Many people begun to wonder whether CNN can be used in the mvs, but the results obtained are not satisfactory. Until the proposal of MVSNet, the first to apply cost volume to the neural network, obtained a very good experimental result. MVSNet can be regarded as the originator of the application of neural networks to the MVS field.
