@@ -18,7 +18,7 @@
   
    In robotics, MVS can obtain the position and posture of an object through a single camera to assist the grasping of the robotic arm. In autonomous driving, the use of MVS can more accurately generate models of nearby objects to assist obstacle avoidance.
    
-   In terms of remote sensing, processing millions of photos over hundreds of kilometers at a time, mvs can effectively reconstruct metropolises and rural areas. Apple Maps “Flyover” feature provides views of high quality texture mapped city building models. Google Maps “Earth View” also provides stunning 3D views of cities.These are the applications of MVS. They are widely used in our daily lives, but we rarely pay attention to them.  
+   In terms of remote sensing, mvs can effectively reconstruct metropolises and rural areas, processing millions of photos over hundreds of kilometers at a time. Apple Maps “Flyover” feature provides views of high quality texture mapped city building models. Google Maps “Earth View” also provides stunning 3D views of cities. These are the applications of MVS. They are widely used in our daily lives, but we rarely pay attention to them.  
    
    The demand for the 3d industry has increased significantly in recent years. As an indispensable part of 3d industry, mvs has also developed rapidly. Many emerging companies are gradually established, such as Acute3D and Pix4D, allowing users to build high quality and resolution 3D models. So in general, mvs has high practical value, and its future prospects are very promising.
    
