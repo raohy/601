@@ -77,5 +77,3 @@ Although traditional methods can achieve good results under many circumstances, 
 
 ##### Yasutaka Furukawa; Carlos Hernández, Multi-View Stereo: A Tutorial , now, 2015.
 
-The goal of an image-based 3D reconstruction algorithm can be de- scribed as ”given a set of photographs of an object or a scene, estimate
-the most likely 3D shape that explains those photographs, under the assumptions of known materials, viewpoints, and lighting conditions” (See Figure 1.1).
