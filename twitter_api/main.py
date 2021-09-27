@@ -2,11 +2,14 @@ import tweepy
 consumer_key=''
 consumer_secret=''
 n=100
-auth = tweepy.AppAuthHandler(consumer_key, consumer_secret)
-api = tweepy.API(auth)
+try:
+    auth = tweepy.AppAuthHandler(consumer_key, consumer_secret)
+    api = tweepy.API(auth)
+except tweepy.TweepError:
+    print('key in not verified')
 str1=api.search_tweets(q='lol world',count=n)
-print(str1)
-print(str1[0]._json['text'])
+if !str :
+    raise Exception('x is empty，api not respond')
 with open('data.txt', 'w',encoding="utf-8") as f:
     for i in range(n):
         f.write('}')
