@@ -1,4 +1,3 @@
-import sys
 from google.api_core.client_options import ClientOptions
 from google.cloud import automl_v1
 
@@ -13,19 +12,12 @@ def pdf_payload(file_path):
 def get_prediction(file_path, model_name):
     options = ClientOptions(api_endpoint='automl.googleapis.com')
     prediction_client = automl_v1.PredictionServiceClient(client_options=options)
-
     payload = inline_text_payload(file_path)
-    # Uncomment the following line (and comment the above line) if want to predict on PDFs.
-    # payload = pdf_payload(file_path)
-
     params = {}
-
     request = prediction_client.predict(name=model_name, payload=payload)
-
-    return request  # waits until request is returned
+    return request 
 
 if __name__ == '__main__':
-    file_path=r'C:\Users\raoho\Desktop\data2.csv'
+    file_path='data2.csv'
     model_name='projects/209609468506/locations/us-central1/models/TST1068749491454083072'
-
     print(get_prediction(file_path, model_name))
