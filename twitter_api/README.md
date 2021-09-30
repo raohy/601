@@ -8,3 +8,5 @@ This is the prediction of the validation set, a total of 13 pictures. It can be 
 
 ![](/images/matrix.png)
 The above figure reflects the specific prediction situation of the verification set. It can be found that for neutral and positive emotional information, the prediction accuracy rate given by the model is relatively high, while the negative one is not satisfactory. It may be related to the small sample size of negative samples. But overall the result is quite satisfactory.
+
+In the gnlp.py file, I listed a way to access my model and can import samples to get the training results. Unfortunately, it requires a secret key to verify.
