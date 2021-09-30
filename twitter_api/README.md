@@ -7,3 +7,4 @@ Through Google’s AutoML Natural Language service, I used the twitter informati
 This is the prediction of the validation set, a total of 13 pictures. It can be found that the accuracy rate and recall rate are both maintained at about 60%, which can  recognized most of the emotions but are still not accurate enough. The main reason is that the training samples are not large enough to form a stable model which suggest us that big dataset is indispensable.
 
 ![](/images/matrix.png)
+The above figure reflects the specific prediction situation of the verification set. It can be found that for neutral and positive emotional information, the prediction accuracy rate given by the model is relatively high, while the negative one is not satisfactory. It may be related to the small sample size of negative samples. But overall the result is quite satisfactory.
