@@ -1,10 +1,10 @@
 
 
 #### goal
-  make a tool which can turn several 2d images of an object into a 3d model
+  make a tool which can turn several 2d images of an object into a 3d model(expecially small object)
 
 #### approach 
-  deep learning / mvsnet family
+  deep learning: MVSNet family 
 
 #### dataset
   dtu:
