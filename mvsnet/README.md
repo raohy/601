@@ -20,13 +20,15 @@
 ### training results
    ![](/images/building1.png)![](/images/depth1.png)![](/images/probability1.png)
    
-  &emsp;&emsp;&emsp;&emsp; inference image &emsp; &emsp; &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;                depth map        &emsp;&emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;        probability map                       
+  &emsp;&emsp;&emsp;&emsp; inference image(without noises) &emsp; &emsp; &emsp; &emsp; &emsp;                 depth map        &emsp;&emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;        probability map                       
    
  depth map:reflects the distance of the object from the origin, and it is a way to represent 3d objects.
  
  probability map: reflects the depth estimation quality.
  
    ![](/images/sofa1.png)
+   
+   inference image(without noises)
    
  Through comparison, it can be found that mvsnet can greatly reconstruct 3d models without background disturbance. However, it cannot effectively eliminate background disturbance for objects with the noises. The generated 3d model will inevitably contain background noises.
  So if we want it to be a tool that can be used in any suitations, the network should be improved.
