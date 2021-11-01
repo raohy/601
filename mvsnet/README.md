@@ -1,10 +1,12 @@
 
 
-##### goal:make a tool which can turn several 2d images of an object into a 3d model
+##### goal
+  make a tool which can turn several 2d images of an object into a 3d model
 
-approach: deep learning / mvsnet family
+##### approach 
+  deep learning / mvsnet family
 
-dataset:
+##### dataset
   dtu:
   This data set (freely available) is aimed at multiple view stereo (MVS) evaluation, and is made using our robotic lab set up outlined here.
   An industrial robot arm was mounted with a structured light scanner. This allowed for structured light scans corresponding to each image in the data set. The images were taken by one of the cameras in the structured light scanner. A small video presenting the dataset can be found here.
@@ -23,5 +25,5 @@ We offer the following challenges:
 5 training and 5 test videos (data / results) at ca. 13.6 Hz for low-resolution many-view stereo on video data recorded with the multi-camera rig
 27 training and 20 test frames (data / results) for low-resolution two-view stereo on frames of the multi-camera rig
 
-training process:
+##### training process
   
