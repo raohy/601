@@ -1,7 +1,7 @@
 
 
 ### goal
-  make a tool which can turn several 2d images of an object into a 3d model(expecially small objects)
+  develop a tool which can turn several 2d images of an object into a 3d model(expecially small objects)
 
 ### approach 
   deep learning:  MVSNet family 
