@@ -28,4 +28,9 @@
  
    ![](/images/sofa1.png)
    
+ Through comparison, it can be found that mvsnet can greatly reconstruct 3d models without background disturbance. However, it cannot effectively eliminate background interference for objects with background noise. The generated 3d model will inevitably contain background noise.
+ So if we want to make the , the network should be improved.
+ 
+ #### Sprint 3 Plan
+  explore more algorithms or models and find the solutions to eliminate background noise.
    
