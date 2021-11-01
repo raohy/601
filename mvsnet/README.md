@@ -22,9 +22,9 @@
    
   &emsp;&emsp;&emsp;&emsp; inference image(without noises) &emsp; &emsp; &emsp; &emsp; &emsp;                 depth map        &emsp;&emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;        probability map                       
    
- depth map:reflects the distance of the object from the origin, and it is a way to represent 3d objects.
+ depth map reflects the distance of the object from the origin, and it is a way to represent 3d objects.
  
- probability map: reflects the depth estimation quality.
+ probability map reflects the depth estimation quality.
  
    ![](/images/sofa1.png)
    
