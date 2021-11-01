@@ -8,6 +8,7 @@
 
 #### dataset
   dtu:
+  ![](/images/1.png) ![](/images/1.png)![](/images/1.png)
   This data set (freely available) is aimed at multiple view stereo (MVS) evaluation, and is made using our robotic lab set up outlined here.
   An industrial robot arm was mounted with a structured light scanner. This allowed for structured light scans corresponding to each image in the data set. The images were taken by one of the cameras in the structured light scanner. A small video presenting the dataset can be found here.
 
