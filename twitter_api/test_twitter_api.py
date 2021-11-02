@@ -8,13 +8,13 @@ n=100
 def test_connection():
     assert connection() is not None
 
+def test_retrieve():
+    assert retrieve() is None
+    
 def connection():
     auth = tweepy.AppAuthHandler(consumer_key, consumer_secret)
     api = tweepy.API(auth)
     return api
-
-def test_retrieve():
-    assert retrieve() is None
 
 def retrieve():
     api=connection()
