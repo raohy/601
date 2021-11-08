@@ -28,7 +28,7 @@
  
    ![](/images/sofa1.png)
    
-   inference image(without noises)
+   inference image(with noises)
    
  Through comparison, it can be found that mvsnet can greatly reconstruct 3d models without background disturbance. However, it cannot effectively eliminate background disturbance for objects with the noises. The generated 3d model will inevitably contain background noises.
  So if we want it to be a tool that can be used in any situations, the network should be improved.
