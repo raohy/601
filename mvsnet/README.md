@@ -17,7 +17,7 @@
   
   The scenes include a wide range of objects in an effort to span the MVS problem. At the same time, the data set also include scenes with very similar objects, e.g. model houses, such that intra class variability can be explored. The image resolution is 1600 x 1200. The camera positions and internal camera parameters have been found with high accuracy, via the matlab calibration toolbox, which is also the toolbox you need to retrieve these parameters. Lastly, the scenes have been recorded in all 49 or 64 scens with seven different lighting conditions from directional to diffuse.
 
-### training results
+### performance
    ![](/images/building1.png)![](/images/depth1.png)![](/images/probability1.png)
    
   &emsp;&emsp;&emsp;&emsp; inference image(without noises) &emsp; &emsp; &emsp; &emsp; &emsp;                 depth map        &emsp;&emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;        probability map                       
